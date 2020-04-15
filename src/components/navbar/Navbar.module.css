@@ -1,11 +1,46 @@
 body {
     padding: 0;
     margin: 0;
+    background-color: rgba(138, 131, 131, 0.295);
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .navbar {
-    padding: 20px 20px;
-    background-color: #0b0bbbce;
+    padding: 15px 20px;
+    background-color: #1717d8ce;
     font-size: 24px;
     color: #ffffffe5;
+    display: flex;
+    align-items: center;
+}
+
+.navbarLogo {
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+}
+
+.navbarList {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+}
+
+.navItem {
+    list-style: none;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.navLink {
+    display: block;
+    text-decoration: none;
+    color: white;
 }

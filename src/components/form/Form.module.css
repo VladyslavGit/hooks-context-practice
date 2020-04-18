@@ -1,0 +1,65 @@
+.formGroup {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    position: relative;
+}
+
+.formControl {
+    display: block;
+    margin: 0 auto;
+    width: 700px;
+    padding: 10px 20px;
+    font-size: 22px;
+    border-width: 3px;
+    border-color: #0000ff;
+    border-radius: 25px;
+    background-color: transparent;
+    color: currentColor;
+}
+
+.formControl:focus {
+    outline: none;
+}
+
+.btnAdd {
+    position: absolute;
+    right: 0;
+    transform: translateX(-75%);
+    display: inline-block;
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    background-image: url("../../images/add.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 32px;
+    height: 32px;
+    outline: none;
+    border: 2px solid transparent;
+}
+
+.btnAdd:hover {
+    border: 3px solid #008000;
+}
+
+.hr {
+    margin-top: 26px;
+    margin-bottom: 26px;
+    background-color: #080852;
+    border-radius: 10px;
+}
+
+@media (min-width: 718px) {
+    .formGroup {
+        width: 718px;
+    }
+
+    .hr {
+        width: 718px;
+    }
+}

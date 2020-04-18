@@ -1,0 +1,31 @@
+.notesList {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    position: relative;
+}
+
+.noteListItem {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 22px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #1111d4;
+    border-radius: 25px;
+    background-color: transparent;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.noteListItem:hover {
+    outline: none;
+    border-color: #008000;
+}
+
+@media (min-width: 718px) {
+    .notesList {
+        width: 718px;
+    }
+}

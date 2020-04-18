@@ -35,12 +35,21 @@ img {
 
 .navItem {
     list-style: none;
-    margin-left: 20px;
+    margin-left: 15px;
     cursor: pointer;
 }
 
 .navLink {
     display: block;
     text-decoration: none;
-    color: white;
+    color: #ffffff96;
+    padding: 5px 5px;
+}
+
+.activeLink {
+    color: #ffffff;
+}
+
+.navLink:hover {
+    color: #ffffff;
 }

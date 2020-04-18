@@ -9,12 +9,21 @@ export const Navbar = () => (
     </div>
     <ul className={styles.navbarList}>
       <li className={styles.navItem}>
-        <NavLink className={styles.navLink} to="/" exact>
+        <NavLink
+          className={styles.navLink}
+          activeClassName={styles.activeLink}
+          to="/"
+          exact
+        >
           Home
         </NavLink>
       </li>
       <li className={styles.navItem}>
-        <NavLink className={styles.navLink} to="/about" exact>
+        <NavLink
+          className={styles.navLink}
+          activeClassName={styles.activeLink}
+          to="/about"
+        >
           About
         </NavLink>
       </li>

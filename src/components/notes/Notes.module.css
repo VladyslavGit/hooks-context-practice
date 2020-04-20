@@ -17,12 +17,14 @@
     border-radius: 25px;
     background-color: transparent;
     margin-bottom: 20px;
+    box-shadow: 0 5px 3px -3px #1111d4;
     cursor: pointer;
 }
 
 .noteListItem:hover {
     outline: none;
     border-color: #008000;
+    box-shadow: 0 5px 3px -3px #008000;
 }
 
 .btnDel {

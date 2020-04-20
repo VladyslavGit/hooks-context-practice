@@ -3,7 +3,6 @@
     justify-items: center;
     align-items: center;
     margin: 0 auto;
-    margin-top: 40px;
     position: relative;
 }
 
@@ -17,7 +16,7 @@
     border-color: #0000ff;
     border-radius: 25px;
     background-color: transparent;
-    color: currentColor;
+    box-shadow: 0 10px 6px -6px #0000ff;
 }
 
 .formControl:focus {

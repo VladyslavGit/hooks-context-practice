@@ -1,20 +1,30 @@
-import React from "react";
+import React, { useContext } from "react";
+import { AlertContext } from "./../../redux/alert/alertContext";
 import styles from "./Alert.module.css";
+import "./style.css";
 
-export const Alert = ({ alert }) => {
-  if (!alert) {
+export const Alert = () => {
+  const { alert, hide } = useContext(AlertContext);
+  if (!alert.visible) {
     return null;
   }
   return (
     <div
-      className={`styles.alert + '' + ${styles.alert.type || "warning"} + '' +
+      className={`${styles.alert}  ${alert.type || "warning"} ${
         styles.dismissible
-      `}
+      }`}
     >
-      <strong>Caution!</strong>
-      <span className={styles.notifyType}>&nbsp;{alert.text}</span>
-      <button type="button" className={styles.close} aria-label="Close">
-        <span aria-hidden="true">&times;</span>
+      <div>
+        <strong>Caution!</strong>
+        <span className={styles.notifyType}>&nbsp;{alert.text}</span>
+      </div>
+      <button
+        onClick={hide}
+        type="button"
+        className={styles.close}
+        aria-label="Close"
+      >
+        <span aria-hidden="true"></span>
       </button>
     </div>
   );

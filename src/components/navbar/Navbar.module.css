@@ -17,6 +17,8 @@ img {
     color: #ffffffe5;
     display: flex;
     align-items: center;
+    margin-bottom: 40px;
+    box-shadow: inset 0 0 10px #060633;
 }
 
 .navbarLogo {

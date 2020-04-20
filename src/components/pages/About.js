@@ -22,7 +22,7 @@ export const About = () => {
             rel="noopener noreferrer"
             className={styles.link}
           >
-            <strong>Vladyslav inc.</strong>
+            <strong>&nbsp;Vladyslav inc.</strong>
           </a>
           <span className={styles.span}>All rights reserved.</span>
         </p>

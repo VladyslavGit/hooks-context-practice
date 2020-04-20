@@ -6,7 +6,10 @@ export const Notes = ({ notes }) => {
     <ul className={styles.notesList}>
       {notes.map((note) => (
         <li className={styles.noteListItem} key={note.id}>
-          {note.title}
+          <strong>{note.title} </strong>
+          <small className={styles.date}>
+            {new Date().toLocaleDateString()}
+          </small>
           <button class={styles.btnDel} type="submit"></button>
         </li>
       ))}

@@ -15,7 +15,7 @@ export const About = () => {
           Version <strong>1.2 (201.3)</strong>
         </p>
         <p className={styles.autor}>
-          Copyright &copy; 2020{" "}
+          Copyright &copy; 2020
           <a
             href="https://github.com/VladyslavGit"
             target="blanc"

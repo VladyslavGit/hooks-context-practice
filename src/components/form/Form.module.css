@@ -10,7 +10,7 @@
 .formControl {
     display: block;
     margin: 0 auto;
-    width: 700px;
+    width: 100%;
     padding: 10px 20px;
     font-size: 22px;
     border-width: 3px;
@@ -48,18 +48,20 @@
 }
 
 .hr {
+    margin: 0 auto;
+    width: 94%;
     margin-top: 26px;
     margin-bottom: 26px;
     background-color: #080852;
     border-radius: 10px;
 }
 
-@media (min-width: 718px) {
-    .formGroup {
-        width: 718px;
+@media (min-width: 920px) {
+    .hr {
+        width: 840px;
     }
 
-    .hr {
-        width: 718px;
+    .formGroup {
+        width: 880px;
     }
 }

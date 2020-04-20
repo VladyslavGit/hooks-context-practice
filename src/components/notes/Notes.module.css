@@ -6,7 +6,8 @@
 }
 
 .noteListItem {
-    display: block;
+    display: flex;
+    align-items: center;
     margin: 0 auto;
     padding: 10px 20px;
     font-size: 22px;
@@ -24,8 +25,36 @@
     border-color: #008000;
 }
 
-@media (min-width: 718px) {
+.btnDel {
+    position: absolute;
+    right: 0;
+    padding: 0;
+    transform: translateX(-75%);
+    display: inline-block;
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    background-image: url(../../images/del.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    outline: none;
+    border: 2px solid transparent;
+}
+
+.btnDel:hover {
+    border: 3px solid #b84140;
+}
+
+.date {
+    margin: 0px 20px;
+}
+
+@media (min-width: 920px) {
     .notesList {
-        width: 718px;
+        width: 880px;
     }
 }

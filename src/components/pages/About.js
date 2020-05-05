@@ -6,7 +6,7 @@ export const About = () => {
     <>
       <div className={styles.wrapper}>
         <img
-          src={require("../../images/logo.png")}
+          src={require("../../assets/images/logo.png")}
           alt="Note app logo"
           className={styles.logo}
         />

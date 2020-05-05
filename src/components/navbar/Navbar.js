@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 export const Navbar = () => (
   <nav className={styles.navbar}>
     <div className={styles.navbarLogo}>
-      <img src={require("../../images/logo.png")} alt="Note app logo" />
+      <img src={require("../../assets/images/logo.png")} alt="Note app logo" />
     </div>
     <ul className={styles.navbarList}>
       <li className={styles.navItem}>
